@@ -111,7 +111,7 @@ export default function Dashboard() {
                     </div>
 
                     <div className={styles.card}>
-                        <Link href="/code-generation">
+                        <Link href="/dashboard/code">
                             <div className={styles.cardInner}>
                                 <div className={styles.cardFront}>
                                     <img src="/code.png" alt="Code Generation" className={styles.cardIcon} />
@@ -123,12 +123,12 @@ export default function Dashboard() {
                             </div>
                         </Link>
                         <p style={{ textAlign: 'center', marginTop: '10px', fontSize: '1rem', color: '#191919', fontWeight: 'bold', textDecoration: 'underline' }}>
-                            <Link href="/code-generation">Click to Try</Link>
+                            <Link href="/dashboard/code">Click to Try</Link>
                         </p>
                     </div>
 
                     <div className={styles.card}>
-                        <Link href="/music-generation">
+                        <Link href="/dashboard/music">
                             <div className={styles.cardInner}>
                                 <div className={styles.cardFront}>
                                     <img src="/music.png" alt="Music Generation" className={styles.cardIcon} />
@@ -140,7 +140,7 @@ export default function Dashboard() {
                             </div>
                         </Link>
                         <p style={{ textAlign: 'center', marginTop: '10px', fontSize: '1rem', color: '#191919', fontWeight: 'bold', textDecoration: 'underline' }}>
-                            <Link href="/music-generation">Click to Try</Link>
+                            <Link href="/dashboard/music">Click to Try</Link>
                         </p>
                     </div>
                 </div>
