@@ -61,9 +61,7 @@ export default function ImageGeneration() {
           <li className={styles.sidebarMenuItem}>
             <Link href="/dashboard">Home</Link>
           </li>
-          <li className={styles.sidebarMenuItem}>
-            <Link href="/history">History</Link>
-          </li>
+
           <li className={styles.sidebarMenuItem}>
             <Link href="/settings">Settings</Link>
           </li>
@@ -71,7 +69,7 @@ export default function ImageGeneration() {
       </aside>
       <main className={styles.mainContent}>
         <div className={styles.titleWithIcon}>
-          <img src="/img.png" alt="Image Icon" className={styles.titleIcon} />  {/* Added image icon */}
+          <img src="/img.png" alt="Image Icon" className={styles.titleIcon} />
           <h1 className={styles.title}>Image Generation</h1>
         </div>
         <p className={styles.subtitle}>Turn your prompt into an image.</p>

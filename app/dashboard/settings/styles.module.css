@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #191919;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+.sidebarTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.sidebarMenu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebarMenuItem {
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #a0aec0;
+    cursor: pointer;
+}
+
+.sidebarMenuItem:hover {
+    color: #ffffff;
+}
+
+/* For the right side content */
+.mainContent {
+    flex: 1;
+    padding: 40px;
+    margin-left: 270px;
+    /* Ensure there's space for the sidebar */
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: "Arial", sans-serif;
+}
+
+.titleIcon {
+    width: 50px;
+    height: 50px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    font-family: "Arial", sans-serif;
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 10px;
+}

@@ -63,9 +63,7 @@ export default function ChatSection() {
                     <li className={styles.sidebarMenuItem}>
                         <Link href="/dashboard">Home</Link>
                     </li>
-                    <li className={styles.sidebarMenuItem}>
-                        <Link href="/history">History</Link>
-                    </li>
+
                     <li className={styles.sidebarMenuItem}>
                         <Link href="/settings">Settings</Link>
                     </li>

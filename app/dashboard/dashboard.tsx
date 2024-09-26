@@ -24,10 +24,7 @@ export default function Dashboard() {
                         <Link href="/dashboard">Home</Link>
                     </li>
                     <li className={styles.sidebarMenuItem}>
-                        <Link href="/history">History</Link>
-                    </li>
-                    <li className={styles.sidebarMenuItem}>
-                        <Link href="/settings">Settings</Link>
+                        <Link href="/dashboard/settings">Settings</Link>
                     </li>
                 </ul>
             </aside>
@@ -39,7 +36,7 @@ export default function Dashboard() {
                 </div>
 
                 <div className={styles.userButtonContainer}>
-                    <UserButton /> {/* This will allow the user to access Clerk user account-related options */}
+                    <UserButton />
                 </div>
                 <div className={styles.cardGrid}>
                     <div className={styles.card}>
@@ -94,19 +91,19 @@ export default function Dashboard() {
                     </div>
 
                     <div className={styles.card}>
-                        <Link href="/audio-generation">
+                        <Link href="/dashboard/summary">
                             <div className={styles.cardInner}>
                                 <div className={styles.cardFront}>
-                                    <img src="/audio.png" alt="Audio Generation" className={styles.cardIcon} />
-                                    <h3>Audio Generation</h3>
+                                    <img src="/summary.png" alt="Summarizer" className={styles.cardIcon} />
+                                    <h3>Summarizer</h3>
                                 </div>
                                 <div className={styles.cardBack}>
-                                    <p>Generate audio effortlessly.</p>
+                                    <p>Quickly summarize text to extract key points with ease.</p>
                                 </div>
                             </div>
                         </Link>
                         <p style={{ textAlign: 'center', marginTop: '10px', fontSize: '1rem', color: '#191919', fontWeight: 'bold', textDecoration: 'underline' }}>
-                            <Link href="/audio-generation">Click to Try</Link>
+                            <Link href="/dashboard/summary">Click to Try</Link>
                         </p>
                     </div>
 

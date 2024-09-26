@@ -8,7 +8,7 @@ export default function MusicVideoGeneration() {
     const [query, setQuery] = useState("");
     const [tracks, setTracks] = useState<any[]>([]);
 
-    // Function to fetch music videos using Deezer API
+
     const fetchMusic = async () => {
         try {
             const res = await fetch(
@@ -34,11 +34,11 @@ export default function MusicVideoGeneration() {
         }
     };
 
-    // Download function (here, we'll download the preview URL)
+
     const downloadTrack = (previewUrl: string) => {
         const link = document.createElement("a");
         link.href = previewUrl;
-        link.download = "music_preview.mp3"; // This will download the music preview
+        link.download = "music_preview.mp3";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -55,9 +55,7 @@ export default function MusicVideoGeneration() {
                     <li className={styles.sidebarMenuItem}>
                         <a href="/dashboard">Home</a>
                     </li>
-                    <li className={styles.sidebarMenuItem}>
-                        <a href="/history">History</a>
-                    </li>
+
                     <li className={styles.sidebarMenuItem}>
                         <a href="/settings">Settings</a>
                     </li>
@@ -68,7 +66,7 @@ export default function MusicVideoGeneration() {
                     <img src="/music.png" alt="Music Icon" className={styles.titleIcon} />
                     <h1 className={styles.title}>Music Generation</h1>
                 </div>
-                <p className={styles.subtitle}>Turn your prompt into a music video.</p>
+                <p className={styles.subtitle}>Listen to your favorite tracks effortlessly</p>
 
                 <div className={styles.controls}>
                     <input

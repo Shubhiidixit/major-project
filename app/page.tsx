@@ -16,7 +16,7 @@ export default function Home() {
           <h1 className="text-2xl font-bold">MultiGen AI</h1>
         </div>
 
-        <div className="flex items-center space-x-4"> {/* Flex container to space out buttons */}
+        <div className="flex items-center space-x-4">
           <Link href={isSignedIn ? "/dashboard" : "/sign-in"}>
             <button className="px-6 py-2 bg-white text-dark rounded-full font-semibold hover:bg-gray-300 transition">
               Get Started
@@ -24,7 +24,7 @@ export default function Home() {
           </Link>
 
           {isSignedIn && (
-            <div> {/* UserButton should appear after Get Started */}
+            <div>
               <UserButton />
             </div>
           )}
@@ -45,6 +45,7 @@ export default function Home() {
                     "Code Generation.",
                     "Video Generation.",
                     "Music Generation.",
+                    "Summary Generation",
                   ],
                   autoStart: true,
                   loop: true,

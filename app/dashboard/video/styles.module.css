@@ -6,7 +6,7 @@
 
 .sidebar {
   width: 250px;
-  background-color: #2d3748;
+  background-color: #191919;
   color: white;
   padding: 20px;
   position: fixed;
@@ -58,9 +58,7 @@
 
 .titleIcon {
   width: 50px;
-  /* Adjust the width as needed */
   height: 50px;
-  /* Adjust the height as needed */
 }
 
 

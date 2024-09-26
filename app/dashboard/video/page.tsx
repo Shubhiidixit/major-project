@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import styles from "./styles.module.css";
-import { AiOutlineDownload, AiOutlineVideoCamera } from "react-icons/ai";  // Import video icon
+import { AiOutlineDownload, AiOutlineVideoCamera } from "react-icons/ai";
 
 export default function VideoGeneration() {
   const [query, setQuery] = useState("");
@@ -61,9 +61,7 @@ export default function VideoGeneration() {
           <li className={styles.sidebarMenuItem}>
             <Link href="/dashboard">Home</Link>
           </li>
-          <li className={styles.sidebarMenuItem}>
-            <Link href="/history">History</Link>
-          </li>
+
           <li className={styles.sidebarMenuItem}>
             <Link href="/settings">Settings</Link>
           </li>
@@ -71,7 +69,7 @@ export default function VideoGeneration() {
       </aside>
       <main className={styles.mainContent}>
         <div className={styles.titleWithIcon}>
-          <img src="/video.png" alt="Image Icon" className={styles.titleIcon} />  {/* Added image icon */}
+          <img src="/video.png" alt="Image Icon" className={styles.titleIcon} />
           <h1 className={styles.title}>Video Generation</h1>
         </div>
         <p className={styles.subtitle}>Turn your prompt into a video.</p>
