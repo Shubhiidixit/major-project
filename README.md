@@ -1,6 +1,6 @@
 # major-project
 # MultiGen AI: Your All-in-one AI Content Creation Hub 
-Link- https://multigen-ai.vercel.app/
+LINK- https://multigen-ai.vercel.app/
 
 ## Introduction
 MultiGen AI is an all-in-one AI-powered platform that streamlines the generation of high-quality text, video, image, and audio content, tailored to your specific needs.
